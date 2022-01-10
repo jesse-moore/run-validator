@@ -1,9 +1,9 @@
 {
-  "name": "aws-sam-lambda-typescript",
+  "name": "run-validator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "repository": "https://github.com/jesse-moore/aws-lambda-typescript.git",
+  "repository": "https://github.com/jesse-moore/run-validator.git",
   "scripts": {
 	"build": "tsc",
 	"demo": "echo \"Hello $npm_config_first $npm_config_last\"",
