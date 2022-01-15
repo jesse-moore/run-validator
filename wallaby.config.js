@@ -24,5 +24,6 @@ module.exports = function (wallaby) {
         filesWithNoCoverageCalculated: [],
         runMode: 'onsave',
         trace: true,
+		maxConsoleMessagesPerTest: 1000
     };
 };
