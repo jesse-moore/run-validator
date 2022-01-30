@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx creator="StravaGPX" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" xmlns="http://www.topografix.com/GPX/1/1">
+ <metadata>
+  <time>2017-06-17T20:45:00Z</time>
+ </metadata>
+ <trk>
+  <name>Morning Run</name>
+  <type>9</type>
+  <trkseg>
+   <trkpt lat="-41.2747420" lon="174.7850500">
+    <ele>13.0</ele>
+    <time>2017-06-17T20:45:00Z</time>
+   </trkpt>
+   <trkpt lat="-41.2749820" lon="174.7847600">
+    <ele>13.8</ele>
+    <time>2017-06-17T20:45:10Z</time>
+   </trkpt>
+   <trkpt lat="-41.2752300" lon="174.7845200">
+    <ele>13.5</ele>
+    <time>2017-06-17T20:45:20Z</time>
+   </trkpt>
+   <trkpt lat="-41.2755280" lon="174.7842900">
+    <ele>12.7</ele>
+    <time>2017-06-17T20:45:30Z</time>
+   </trkpt>
+   <trkpt lat="-41.2758180" lon="174.7841000">
+    <ele>11.6</ele>
+    <time>2017-06-17T20:45:40Z</time>
+   </trkpt>
+   <trkpt lat="-41.2761340" lon="174.7839000">
+    <ele>10.0</ele>
+    <time>2017-06-17T20:45:50Z</time>
+   </trkpt>
+   <trkpt lat="-41.2764740" lon="174.7836800">
+    <ele>8.2</ele>
+    <time>2017-06-17T20:46:00Z</time>
+   </trkpt>
+   <trkpt lat="-41.2767870" lon="174.7834200">
+    <ele>6.4</ele>
+    <time>2017-06-17T20:46:10Z</time>
+   </trkpt>
+   <trkpt lat="-41.2770800" lon="174.7834000">
+    <ele>5.4</ele>
+    <time>2017-06-17T20:46:20Z</time>
+   </trkpt>
+  </trkseg>
+    <trkseg>
+   <trkpt lat="-41.2747420" lon="174.7850500">
+    <ele>13.0</ele>
+    <time>2017-06-17T20:45:00Z</time>
+   </trkpt>
+   <trkpt lat="-41.2749820" lon="174.7847600">
+    <ele>13.8</ele>
+    <time>2017-06-17T20:45:10Z</time>
+   </trkpt>
+   <trkpt lat="-41.2752300" lon="174.7845200">
+    <ele>13.5</ele>
+    <time>2017-06-17T20:45:20Z</time>
+   </trkpt>
+   <trkpt lat="-41.2755280" lon="174.7842900">
+    <ele>12.7</ele>
+    <time>2017-06-17T20:45:30Z</time>
+   </trkpt>
+   <trkpt lat="-41.2758180" lon="174.7841000">
+    <ele>11.6</ele>
+    <time>2017-06-17T20:45:40Z</time>
+   </trkpt>
+   <trkpt lat="-41.2761340" lon="174.7839000">
+    <ele>10.0</ele>
+    <time>2017-06-17T20:45:50Z</time>
+   </trkpt>
+   <trkpt lat="-41.2764740" lon="174.7836800">
+    <ele>8.2</ele>
+    <time>2017-06-17T20:46:00Z</time>
+   </trkpt>
+   <trkpt lat="-41.2767870" lon="174.7834200">
+    <ele>6.4</ele>
+    <time>2017-06-17T20:46:10Z</time>
+   </trkpt>
+   <trkpt lat="-41.2770800" lon="174.7834000">
+    <ele>5.4</ele>
+    <time>2017-06-17T20:46:20Z</time>
+   </trkpt>
+  </trkseg>
+ </trk>
+</gpx>

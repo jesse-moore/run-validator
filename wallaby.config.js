@@ -3,7 +3,7 @@ module.exports = function (wallaby) {
     process.env.NODE_PATH +=
         path.delimiter + path.join(wallaby.localProjectDir, 'node_modules');
     return {
-        files: ['src/**/*.*', './test/data/*.*'],
+        files: ['src/**/*.*', './test/data/**/*.*'],
 
         tests: ['./test/**/*.test.ts'],
         env: {

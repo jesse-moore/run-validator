@@ -7,33 +7,21 @@ Description: >
 
 Globals:
   Function:
-    Timeout: 3
+    Timeout: 5
 
 Resources:
-  HelloWorldFunction:
+  ParseRunFunction:
     Type: AWS::Serverless::Function
     Properties:
-      FunctionName: aws-sam-lambda-typescript
       CodeUri: ./
-      Handler: build/controllers/helloWorld.lambdaHandler
+      Handler: build/controllers/validateRun.lambdaHandler
       Runtime: nodejs14.x
       Events:
-        HelloWorld:
+        ValidateRun:
           Type: Api
           Properties:
-            Path: /hello
+            Path: /parse-run
             Method: get
       Environment:
         Variables:
-          NODE_OPTIONS: --enable-source-maps      
-
-Outputs:
-  HelloWorldApi:
-    Description: "API Gateway endpoint URL for Prod stage for Hello World function"
-    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/hello"
-  HelloWorldFunction:
-    Description: "Hello World Lambda Function ARN"
-    Value: !GetAtt HelloWorldFunction.Arn
-  HelloWorldFunctionIamRole:
-    Description: "Implicit IAM Role created for Hello World function"
-    Value: !GetAtt HelloWorldFunctionRole.Arn
+          NODE_OPTIONS: --enable-source-maps

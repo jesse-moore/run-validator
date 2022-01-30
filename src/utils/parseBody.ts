@@ -2,9 +2,10 @@ import GpxParser from 'gpxparser';
 import { EventBody } from '../types';
 import { RequestError } from './RequestError';
 
-export const parseBody = (body: any): EventBody => {
-    const _body: EventBody = { activity: '' };
+export const parseBody = (_body: string): EventBody => {
+    const result: EventBody = { activity: '' };
     const errors: string[] = [];
+    const body = JSON.parse(_body);
 
     if (body.activity && typeof body.activity === 'string') {
         const isBase64 =
@@ -17,7 +18,7 @@ export const parseBody = (body: any): EventBody => {
             const activity = Buffer.from(body.activity, 'base64').toString(
                 'ascii'
             );
-            _body.activity = activity;
+            result.activity = activity;
         }
     } else {
         errors.push('Activity Missing');
@@ -26,6 +27,6 @@ export const parseBody = (body: any): EventBody => {
     if (errors.length > 0) {
         throw new RequestError(errors.join(', '));
     } else {
-        return _body;
+        return result;
     }
 };

@@ -1,24 +1,38 @@
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "name": "HelloWorldFunction",
-      "type": "node",
-      "request": "attach",
-      "address": "localhost",
-      "port": 5858,
-      "localRoot": "${workspaceFolder}/.aws-sam/build/HelloWorldFunction",
-      "remoteRoot": "/var/task",
-      "protocol": "inspector",
-      "stopOnEntry": false,
-      "outFiles": [
-        "${workspaceFolder}/.aws-sam/build/HelloWorldFunction/**/*.js"
-      ],
-      "sourceMaps": true,
-      "skipFiles": [
-        "/var/runtime/**/*.js",
-        "<node_internals>/**/*.js"
-      ]
-    }
-  ]
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "aws-sam",
+            "request": "direct-invoke",
+            "name": "run-validator",
+            "invokeTarget": {
+                "target": "code",
+                "projectRoot": "${workspaceFolder}/",
+                "lambdaHandler": "build/controllers/validateRun.lambdaHandler"
+            },
+            "lambda": {
+                "runtime": "nodejs14.x",
+                "payload": {
+                    "path": "${workspaceFolder}/test/data/eventBody.json"
+                },
+                "environmentVariables": {}
+            }
+        },
+        {
+            "name": "HelloWorldFunction",
+            "type": "node",
+            "request": "attach",
+            "address": "localhost",
+            "port": 5858,
+            "localRoot": "${workspaceFolder}/.aws-sam/build/HelloWorldFunction",
+            "remoteRoot": "/var/task",
+            "protocol": "inspector",
+            "stopOnEntry": false,
+            "outFiles": [
+                "${workspaceFolder}/.aws-sam/build/HelloWorldFunction/**/*.js"
+            ],
+            "sourceMaps": true,
+            "skipFiles": ["/var/runtime/**/*.js", "<node_internals>/**/*.js"]
+        }
+    ]
 }
